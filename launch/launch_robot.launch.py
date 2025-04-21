@@ -39,7 +39,7 @@ def generate_launch_description():
     twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
-            parameters=[twist_mux_params, {'use_sim_time': True}],
+            parameters=[twist_mux_params, {'use_sim_time': false}],
             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
         )
 
@@ -140,7 +140,6 @@ def generate_launch_description():
         rsp,
         # joystick,
         twist_mux,
-        
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
         ros_gz_bridge,
