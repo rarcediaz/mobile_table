@@ -1,0 +1,1 @@
+/home/rodrigo/dev_ws/src/mobile_table/launch/launch_sim.launch.py

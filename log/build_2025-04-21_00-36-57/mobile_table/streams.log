@@ -1,0 +1,40 @@
+[0.067s] Invoking command in '/home/rodrigo/dev_ws/src/mobile_table/build/mobile_table': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/src/mobile_table/build/mobile_table -- -j2 -l2
+[0.293s] Invoked command in '/home/rodrigo/dev_ws/src/mobile_table/build/mobile_table' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/src/mobile_table/build/mobile_table -- -j2 -l2
+[0.310s] Invoking command in '/home/rodrigo/dev_ws/src/mobile_table/build/mobile_table': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/src/mobile_table/build/mobile_table
+[0.324s] -- Install configuration: ""
+[0.333s] -- Execute custom install script
+[0.339s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/empty.yaml
+[0.340s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/gaz_ros2_ctl_use_sim.yaml
+[0.341s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/gz_bridge.yaml
+[0.341s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/joystick.yaml
+[0.341s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/my_controllers.yaml
+[0.341s] -- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/twist_mux.yaml
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/view_bot.rviz
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/gazebo_control.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/inertial_macros.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/lidar.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/robot.urdf.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/robot_core.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/ros2_control.xacro
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/joystick.launch.py
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/launch_robot.launch.py
+[0.363s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/launch_sim.launch.py
+[0.367s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/rplidar.launch.py
+[0.368s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/rsp.launch.py
+[0.371s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/worlds/empty.world
+[0.372s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/package_run_dependencies/mobile_table
+[0.372s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/parent_prefix_path/mobile_table
+[0.372s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/ament_prefix_path.sh
+[0.372s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/ament_prefix_path.dsv
+[0.373s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/path.sh
+[0.373s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/path.dsv
+[0.373s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.bash
+[0.373s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.sh
+[0.378s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.zsh
+[0.378s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.dsv
+[0.378s] -- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/package.dsv
+[0.386s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/packages/mobile_table
+[0.386s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/cmake/mobile_tableConfig.cmake
+[0.387s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/cmake/mobile_tableConfig-version.cmake
+[0.387s] -- Up-to-date symlink: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/package.xml
+[0.391s] Invoked command in '/home/rodrigo/dev_ws/src/mobile_table/build/mobile_table' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/src/mobile_table/build/mobile_table

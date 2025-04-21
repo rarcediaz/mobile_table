@@ -1,0 +1,66 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rodrigo/dev_ws/src/mobile_table/build/mobile_table
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/empty.yaml
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/gaz_ros2_ctl_use_sim.yaml
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/gz_bridge.yaml
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/joystick.yaml
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/my_controllers.yaml
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/config/view_bot.rviz
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/gazebo_control.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/inertial_macros.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/lidar.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/robot.urdf.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/robot_core.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/description/ros2_control.xacro
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/joystick.launch.py
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/launch_robot.launch.py
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/launch_sim.launch.py
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/rplidar.launch.py
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/launch/rsp.launch.py
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/worlds/empty.world
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/package_run_dependencies/mobile_table
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/parent_prefix_path/mobile_table
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/ament_prefix_path.sh
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/ament_prefix_path.dsv
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/path.sh
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/environment/path.dsv
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.bash
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.sh
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.zsh
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/local_setup.dsv
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/package.dsv
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/ament_index/resource_index/packages/mobile_table
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/cmake/mobile_tableConfig.cmake
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/cmake/mobile_tableConfig-version.cmake
+-- Symlinking: /home/rodrigo/dev_ws/src/mobile_table/install/mobile_table/share/mobile_table/package.xml
