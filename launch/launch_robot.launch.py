@@ -44,19 +44,19 @@ def generate_launch_description():
         )
 
 
-    default_world = os.path.join(
-        get_package_share_directory(package_name),
-        'worlds',
-        'empty.world'
-        )    
+    #default_world = os.path.join(
+    #    get_package_share_directory(package_name),
+    #    'worlds',
+    #    'empty.world'
+    #    )    
     
-    world = LaunchConfiguration('world')
+    #world = LaunchConfiguration('world')
 
-    world_arg = DeclareLaunchArgument(
-        'world',
-        default_value=default_world,
-        description='World to load'
-        )
+    #world_arg = DeclareLaunchArgument(
+    #    'world',
+    #    default_value=default_world,
+    #    description='World to load'
+    #    )
 
     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
     controller_params_file = os.path.join(get_package_share_directory(package_name), 'config', 'my_controllers.yaml')
@@ -91,29 +91,11 @@ def generate_launch_description():
     )
 
     delayed_joint_broad_spawner = RegisterEventHandler(
-         event_handler=OnProcessExit(
+         event_handler=OnProcessStart(
              target_action=controller_manager,
              on_start=[diff_drive_spawner],
          )
      )
-
-
-    bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
-    ros_gz_bridge = Node(
-        package="ros_gz_bridge",
-        executable="parameter_bridge",
-        arguments=[
-            '--ros-args',
-            '-p',
-            f'config_file:={bridge_params}',
-        ]
-    )
-
-    ros_gz_image_bridge = Node(
-        package="ros_gz_image",
-        executable="image_bridge",
-        arguments=["/camera/image_raw"]
-    )
 
 
 
@@ -140,8 +122,7 @@ def generate_launch_description():
         rsp,
         # joystick,
         twist_mux,
+        delayed_controller_manager,
         delayed_diff_drive_spawner,
-        delayed_joint_broad_spawner,
-        ros_gz_bridge,
-        ros_gz_image_bridge
+        delayed_joint_broad_spawner
     ])

@@ -50,19 +50,72 @@ Visualization Manager:
       Reference Frame: <Fixed Frame>
       Value: true
     - Class: rviz_default_plugins/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        caster_wheel_bottom:
+          Value: true
+        caster_wheel_top:
+          Value: true
+        chassis:
+          Value: true
+        laser_frame:
+          Value: true
+        left_wheel:
+          Value: true
+        leg1:
+          Value: true
+        leg2:
+          Value: true
+        leg3:
+          Value: true
+        leg4:
+          Value: true
+        project_box:
+          Value: true
+        right_wheel:
+          Value: true
+        table_top:
+          Value: true
       Marker Scale: 1
       Name: TF
-      Show Arrows: false
+      Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
-        {}
+        base_link:
+          base_footprint:
+            {}
+          chassis:
+            caster_wheel_bottom:
+              {}
+            caster_wheel_top:
+              {}
+            laser_frame:
+              {}
+            leg1:
+              {}
+            leg2:
+              {}
+            leg3:
+              {}
+            leg4:
+              {}
+            project_box:
+              {}
+            table_top:
+              {}
+          left_wheel:
+            {}
+          right_wheel:
+            {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
@@ -81,6 +134,10 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
@@ -96,6 +153,11 @@ Visualization Manager:
           Show Trail: false
           Value: true
         chassis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        laser_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -194,7 +256,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.5045742988586426
+      Distance: 6.461552143096924
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -209,10 +271,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.1952022761106491
+      Pitch: -0.14960110187530518
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.2154104709625244
+      Yaw: 0.15539832413196564
     Saved: ~
 Window Geometry:
   Displays:

@@ -1,0 +1,2 @@
+Invoking command in '/home/rarcediaz/dev_ws/src/mobile_table/build/mobile_table': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rarcediaz/dev_ws/src/mobile_table -DCMAKE_INSTALL_PREFIX=/home/rarcediaz/dev_ws/src/mobile_table/install/mobile_table
+Invoked command in '/home/rarcediaz/dev_ws/src/mobile_table/build/mobile_table' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rarcediaz/dev_ws/src/mobile_table -DCMAKE_INSTALL_PREFIX=/home/rarcediaz/dev_ws/src/mobile_table/install/mobile_table
