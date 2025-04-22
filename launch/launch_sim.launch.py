@@ -23,13 +23,13 @@ def generate_launch_description():
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'True', 'use_ros2_control': 'True'}.items()
     )
 
     joystick = IncludeLaunchDescription(
                  PythonLaunchDescriptionSource([os.path.join(
                      get_package_share_directory(package_name),'launch','joystick.launch.py'
-                 )]), launch_arguments={'use_sim_time': 'true'}.items()
+                 )]), launch_arguments={'use_sim_time': 'True'}.items()
      )
 
     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
@@ -59,7 +59,7 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')]),
-                    launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()
+                    launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'True'}.items()
              )
 
     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.

@@ -10,6 +10,7 @@ from launch.substitutions import LaunchConfiguration
 from launch.substitutions import Command
 from launch.actions import RegisterEventHandler
 from launch.event_handlers import OnProcessExit
+from launch.event_handlers import OnProcessStart
 
 from launch_ros.actions import Node
 
@@ -26,7 +27,7 @@ def generate_launch_description():
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
-                )]), launch_arguments={'use_sim_time': 'false', 'use_ros2_control': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'False', 'use_ros2_control': 'True'}.items()
     )
 
     # joystick = IncludeLaunchDescription(
@@ -39,7 +40,7 @@ def generate_launch_description():
     twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
-            parameters=[twist_mux_params, {'use_sim_time': false}],
+            parameters=[twist_mux_params, {'use_sim_time': False}],
             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
         )
 
@@ -59,12 +60,13 @@ def generate_launch_description():
     #    )
 
     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
+
     controller_params_file = os.path.join(get_package_share_directory(package_name), 'config', 'my_controllers.yaml')
 
     controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        arguments=[{'robot_description': robot_description},
+        parameters=[{'robot_description': robot_description},
                     controller_params_file],
     )
 
@@ -78,7 +80,7 @@ def generate_launch_description():
     )
 
     delayed_diff_drive_spawner = RegisterEventHandler(
-         event_handler=OnProcessExit(
+         event_handler=OnProcessStart(
              target_action=controller_manager,
              on_start=[diff_drive_spawner],
          )
@@ -93,7 +95,7 @@ def generate_launch_description():
     delayed_joint_broad_spawner = RegisterEventHandler(
          event_handler=OnProcessStart(
              target_action=controller_manager,
-             on_start=[diff_drive_spawner],
+             on_start=[joint_broad_spawner],
          )
      )
 
