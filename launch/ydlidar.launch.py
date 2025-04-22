@@ -25,7 +25,7 @@ def generate_launch_description():
                 'angle_max': 180.0,
                 'angle_min': -180.0,
                 'range_max': 8,
-                'range_min': 0.6,
+                'range_min': 0.25,
                 'ignore_array': '',
                 'use_sim_time': False
             }]
